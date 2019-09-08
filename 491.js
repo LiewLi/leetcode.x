@@ -7,7 +7,7 @@ var findSubsequences = function(nums) {
     let set = new Set()
     let ret = new Array()
 
-    function addIfNotExits(arr) {
+    function addIfNotExists(arr) {
         let key = arr.join(',')
         if (!set.has(key)) {
             set.add(key)
@@ -18,18 +18,18 @@ var findSubsequences = function(nums) {
     if (nums.length <= 1) {
         return []
     }
-    
+
     let first = nums[0]
     let rest = nums.slice(1)
     let sub = findSubsequences(rest)
 
     rest.forEach(a => {
-        first <= a && addIfNotExits([first, a])
+        first <= a && addIfNotExists([first, a])
     })
 
     sub.forEach(s => {
-        addIfNotExits(s)
-        first <= s[0] && addIfNotExits([first].concat(s))
+        addIfNotExists(s)
+        first <= s[0] && addIfNotExists([first].concat(s))
     })
 
     return ret
