@@ -20,4 +20,4 @@ var countBinarySubstrings = function(s) {
     return cnt
 };
 
-console.log( countBinarySubstrings("00110"))
+console.log( countBinarySubstrings('00110'))

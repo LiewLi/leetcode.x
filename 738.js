@@ -3,8 +3,8 @@
  * @return {number}
  */
 var monotoneIncreasingDigits = function(N) {
-    let s = "" + N
-    let sArr = s.split('')
+    const s = '' + N
+    const sArr = s.split('')
     let idx = sArr.length
     for (let i = sArr.length-1; i > 0; --i) {
         if (sArr[i] < sArr[i-1]) {

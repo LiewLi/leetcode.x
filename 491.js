@@ -3,12 +3,11 @@
  * @return {number[][]}
  */
 var findSubsequences = function(nums) {
-
-    let set = new Set()
-    let ret = new Array()
+    const set = new Set()
+    const ret = []
 
     function addIfNotExists(arr) {
-        let key = arr.join(',')
+        const key = arr.join(',')
         if (!set.has(key)) {
             set.add(key)
             ret.push(arr)
@@ -19,15 +18,15 @@ var findSubsequences = function(nums) {
         return []
     }
 
-    let first = nums[0]
-    let rest = nums.slice(1)
-    let sub = findSubsequences(rest)
+    const first = nums[0]
+    const rest = nums.slice(1)
+    const sub = findSubsequences(rest)
 
-    rest.forEach(a => {
+    rest.forEach((a) => {
         first <= a && addIfNotExists([first, a])
     })
 
-    sub.forEach(s => {
+    sub.forEach((s) => {
         addIfNotExists(s)
         first <= s[0] && addIfNotExists([first].concat(s))
     })

@@ -3,18 +3,16 @@
  * @return {number}
  */
 var subarrayBitwiseORs = function(A) {
-    let set = new Set()
-
-    let p = new Set()
-    
-    for (let a of A) {
-        let s = new Set()
+    const set = new Set()
+    const p = new Set()
+    for (const a of A) {
+        const s = new Set()
         s.add(a)
-        for (let r of p) {
+        for (const r of p) {
             s.add(a | r)
         }
         p = s
-        for (let r of p) {
+        for (const r of p) {
             set.add(r)
         }
     }

@@ -7,14 +7,14 @@ var findLengthOfLCIS = function(nums) {
         return nums.length
     }
     var maxL = 1
-    var max_so_far = 1
+    var maxSoFar = 1
     for (let i = 1; i < nums.length; ++i) {
         if (nums[i] > nums[i-1]) {
-            ++max_so_far
+            ++maxSoFar
         } else {
-            max_so_far = 1
+            maxSoFar = 1
         }
-        maxL = Math.max(maxL, max_so_far)
+        maxL = Math.max(maxL, maxSoFar)
     }
 
     return maxL

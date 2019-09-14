@@ -1,0 +1,26 @@
+{
+  "name": "leetcode",
+  "version": "1.0.0",
+  "description": "leetcode solutions in js",
+  "main": "index.js",
+  "scripts": {
+    "test": "./node_modules/.bin/eslint **.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LiewLi/leetcode.js.git"
+  },
+  "keywords": [
+    "leetcode"
+  ],
+  "author": "LiewLi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LiewLi/leetcode.js/issues"
+  },
+  "homepage": "https://github.com/LiewLi/leetcode.js#readme",
+  "devDependencies": {
+    "eslint": "^6.4.0",
+    "eslint-config-google": "^0.14.0"
+  }
+}

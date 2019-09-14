@@ -5,8 +5,8 @@
  */
 var nthSuperUglyNumber = function(n, primes) {
     primes.sort()
-    let ugly = new Array(n).fill(Number.MAX_SAFE_INTEGER)
-    let idx = new Array(primes.length).fill(0)
+    const ugly = new Array(n).fill(Number.MAX_SAFE_INTEGER)
+    const idx = new Array(primes.length).fill(0)
     ugly[0] = 1
     for (let i = 1; i < n; ++i) {
         for (let j = 0; j < primes.length; ++j) {

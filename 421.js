@@ -8,20 +8,18 @@ var findMaximumXOR = function(nums) {
 
     for (let i = 31; i >= 0; --i) {
         mask = mask | (1 << i)
-        let set = new Set()
-        for (let n of nums) {
+        const set = new Set()
+        for (const n of nums) {
             set.add(n & mask)
         }
-        
-        let tmp = max | (1 << i)
-        for (let prefix of set) {
+        const tmp = max | (1 << i)
+        for (const prefix of set) {
             if (set.has(tmp ^ prefix)) {
                 max = tmp
                 break
             }
         }
     }
-    
     return max
 };
 
