@@ -21,6 +21,12 @@
   "homepage": "https://github.com/LiewLi/leetcode.js#readme",
   "devDependencies": {
     "eslint": "^6.4.0",
-    "eslint-config-google": "^0.14.0"
+    "eslint-config-google": "^0.14.0",
+    "husky": "^3.0.5"
+  },
+  "husky":{
+    "hooks": {
+      "pre-push": "npm test"
+    }
   }
 }
