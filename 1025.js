@@ -3,6 +3,5 @@
  * @return {boolean}
  */
 var divisorGame = function(N) {
-    return (N & 1) == 0
+  return (N & 1) == 0;
 };
-

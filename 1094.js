@@ -4,18 +4,18 @@
  * @return {boolean}
  */
 var carPooling = function(trips, capacity) {
-    const stops = new Array(1001).fill(0)
-    for (let i = 0; i < trips.length; ++i) {
-        const t = trips[i]
-        stops[t[1]] += t[0]
-        stops[t[2]] -= t[0]
-    }
-    for (const s of stops) {
-        capacity -= s
-        if (capacity < 0) return false
-    }
+  const stops = new Array(1001).fill(0);
+  for (let i = 0; i < trips.length; ++i) {
+    const t = trips[i];
+    stops[t[1]] += t[0];
+    stops[t[2]] -= t[0];
+  }
+  for (const s of stops) {
+    capacity -= s;
+    if (capacity < 0) return false;
+  }
 
-    return true
+  return true;
 };
 
-console.log(carPooling([[2, 1, 5], [3, 3, 7]], 5))
+console.log(carPooling([[2, 1, 5], [3, 3, 7]], 5));

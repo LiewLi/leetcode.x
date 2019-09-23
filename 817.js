@@ -11,20 +11,20 @@
  * @return {number}
  */
 var numComponents = function(head, G) {
-    const set = new Set(G)
-    let p = head
-    let cnt = 0
-    while (p) {
-        let q = p
-        while (q && set.has(q.val)) {
-            q = q.next
-        }
-        if (q != p) {
-            cnt++
-            p = q
-        }
-        p = p && p.next
+  const set = new Set(G);
+  let p = head;
+  let cnt = 0;
+  while (p) {
+    let q = p;
+    while (q && set.has(q.val)) {
+      q = q.next;
     }
+    if (q != p) {
+      cnt++;
+      p = q;
+    }
+    p = p && p.next;
+  }
 
-    return cnt
+  return cnt;
 };

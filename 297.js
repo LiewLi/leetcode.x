@@ -1,8 +1,7 @@
 function TreeNode(val) {
-    this.val = val;
-    this.left = this.right = null;
+  this.val = val;
+  this.left = this.right = null;
 }
-
 
 /**
  * Encodes a tree to a single string.
@@ -11,21 +10,21 @@ function TreeNode(val) {
  * @return {string}
  */
 var serialize = function(root) {
-    const ret = []
+  const ret = [];
 
-    function _serialize(root) {
-        if (!root) {
-            ret.push('null')
-            return
-        }
-        ret.push('' + root.val)
-        _serialize(root.left)
-        _serialize(root.right)
+  function _serialize(root) {
+    if (!root) {
+      ret.push("null");
+      return;
     }
+    ret.push("" + root.val);
+    _serialize(root.left);
+    _serialize(root.right);
+  }
 
-    _serialize(root)
+  _serialize(root);
 
-    return ret.join(',')
+  return ret.join(",");
 };
 
 /**
@@ -35,24 +34,24 @@ var serialize = function(root) {
  * @return {TreeNode}
  */
 var deserialize = function(data) {
-    const arr = data.split(',')
+  const arr = data.split(",");
 
-    function _deserialize() {
-        const t = arr.shift()
-        if (t === 'null') {
-            return null
-        }
-
-        const node = new TreeNode()
-        node.val = +t
-
-        node.left = _deserialize()
-        node.right = _deserialize()
-
-        return node
+  function _deserialize() {
+    const t = arr.shift();
+    if (t === "null") {
+      return null;
     }
 
-    return _deserialize()
+    const node = new TreeNode();
+    node.val = +t;
+
+    node.left = _deserialize();
+    node.right = _deserialize();
+
+    return node;
+  }
+
+  return _deserialize();
 };
 
 /**

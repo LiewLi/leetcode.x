@@ -10,6 +10,8 @@ module.exports = {
         "valid-jsdoc": "off",
         "require-jsdoc": "off",
         "eol-last": "off",
-        "indent": ["error", 4]
+        "indent": "off",
+        "quotes": "off",
+        "arrow-parens": "off"
     }
 };
