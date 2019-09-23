@@ -2,16 +2,9 @@ module.exports = {
     "env": {
         "es6": true
     },
-    "extends": "google",
+    "extends": ["prettier"],
+    "plugins": ["prettier"],
     "rules": {
-        "no-unused-vars": "off",
-        "no-var": "off",
-        "semi": "off",
-        "valid-jsdoc": "off",
-        "require-jsdoc": "off",
-        "eol-last": "off",
-        "indent": "off",
-        "quotes": "off",
-        "arrow-parens": "off"
+        "prettier/prettier": "error"
     }
 };
