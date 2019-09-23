@@ -15,7 +15,6 @@ var lenLongestFibSubseq = function(A) {
       while (low <= high) {
         const mid = Math.floor((low + high) / 2);
         if (A[mid] == f) {
-          idx = -1;
           cnt += 1;
           f = A[mid] + A[t];
           s = t;
