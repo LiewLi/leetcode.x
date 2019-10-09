@@ -4,7 +4,8 @@
   "description": "leetcode solutions in js",
   "main": "index.js",
   "scripts": {
-    "test": "./node_modules/.bin/eslint **.js"
+    "test": "./node_modules/.bin/eslint **.js",
+    "pretty": "npx prettier --write *.js"
   },
   "repository": {
     "type": "git",
