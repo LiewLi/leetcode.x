@@ -84,10 +84,10 @@ var findKthLargest = function(nums, k) {
     const size = this.size();
     if (size <= 0) return;
     const idx = this._heap.indexOf(val);
-    if (idx == size-1) {
-        this._heap.pop()
+    if (idx == size - 1) {
+      this._heap.pop();
     } else if (idx >= 0) {
-      this._heap[idx] = this._heap.pop()
+      this._heap[idx] = this._heap.pop();
       this._heapify(idx);
     }
   };
