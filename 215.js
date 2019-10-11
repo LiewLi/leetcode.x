@@ -87,8 +87,7 @@ var findKthLargest = function(nums, k) {
     if (idx == size - 1) {
       this._heap.pop();
     } else if (idx >= 0) {
-      this._heap[idx] = this._heap.pop();
-      this._heapify(idx);
+      this._update(idx, this._heap.pop());
     }
   };
   const minHeap = new Heap((a, b) => b - a);
