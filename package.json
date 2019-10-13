@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "./node_modules/.bin/eslint **.js",
-    "pretty": "npx prettier --write *.js"
+    "pretty": "npx prettier --write *.js",
+    "stat": "ls -l | grep '[0-9][0-9]*.js$' | wc -l"
   },
   "repository": {
     "type": "git",
