@@ -253,7 +253,6 @@ function evalAst1(ast) {
     if (t.left) stack.push(t.left);
   }
   operands = [];
-  console.log(ops);
   while (ops.length) {
     const op = ops.pop();
     switch (op) {
