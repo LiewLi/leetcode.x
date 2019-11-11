@@ -21,10 +21,9 @@
 // };
 
 var equalSubstring = function(s, t, maxCost) {
-  let i = 0;
   let maxL = 0;
   let cost = 0;
-  for (let j = 0; j < s.length && j < t.length; ++j) {
+  for (let j = 0, i = 0; j < s.length && j < t.length; ++j) {
     const diff = Math.abs(s.charCodeAt(j) - t.charCodeAt(j));
     cost += diff;
     while (cost > maxCost) {
