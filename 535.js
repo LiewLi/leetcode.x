@@ -2,6 +2,10 @@ let id = 1001;
 const codeTable =
   "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
 const urlMap = {};
+const codeMap = [...codeTable].reduce((ret, cur, idx) => {
+  ret[cur] = idx;
+  return ret;
+}, {});
 /**
  * Encodes a URL to a shortened URL.
  *
@@ -26,13 +30,9 @@ var encode = function(longUrl) {
  * @return {string}
  */
 var decode = function(shortUrl) {
-  const map = [...codeTable].reduce((ret, cur, idx) => {
-    ret[cur] = idx;
-    return ret;
-  }, {});
   let urlId = 0;
   for (const ch of shortUrl) {
-    urlId = urlId * codeTable.length + map[ch];
+    urlId = urlId * codeTable.length + codeMap[ch];
   }
   return urlMap[urlId];
 };
