@@ -5,7 +5,6 @@
 var canReorderDoubled = function(A) {
   if (A.length % 2 !== 0) return false;
   A.sort((a, b) => a - b);
-  console.log(A);
   while (A.length > 0) {
     const a = A.pop();
     const target = a >= 0 ? a / 2 : a * 2;
