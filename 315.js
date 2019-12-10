@@ -63,10 +63,9 @@ var countSmaller = function(nums) {
 
   const ret = [];
   for (let i = nums.length - 1; i >= 0; --i) {
-    ret.push(insert(nums[i]));
+    ret[i] = insert(nums[i]);
   }
-
-  return ret.reverse();
+  return ret;
 };
 
 console.log(countSmaller([5, 2, 6, 1]));
