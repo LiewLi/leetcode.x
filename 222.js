@@ -11,10 +11,10 @@
  */
 var countNodes = function(root) {
   if (!root) return 0;
-  let left = root,
-    right = root;
-  let lh = 0,
-    rh = 0;
+  let left = root;
+  let right = root;
+  let lh = 0;
+  let rh = 0;
 
   while (left) {
     left = left.left;
