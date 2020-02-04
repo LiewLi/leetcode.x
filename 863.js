@@ -42,6 +42,7 @@ var distanceK = function(root, target, K) {
         if (level === K) ret.push(n.val);
       }
       level++;
+      if (level > K) return;
     }
   };
   for (let i = 0; i < parents.length; ++i) {
