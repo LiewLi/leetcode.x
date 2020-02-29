@@ -12,7 +12,7 @@ var deckRevealedIncreasing = function(deck) {
   deck.sort((a, b) => a - b);
   for (const d of deck) {
     ret[idx.shift()] = d;
-    if (ret.length) idx.push(idx.shift());
+    if (idx.length) idx.push(idx.shift());
   }
   return ret;
 };
