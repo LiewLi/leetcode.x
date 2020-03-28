@@ -28,7 +28,7 @@ var maxSumTwoNoOverlap = function(A, L, M) {
 
     return max;
   };
-  return Math.max(_(A), _([...A].reverse()));
+  return Math.max(_(A), _(A.reverse()));
 };
 
 console.log(maxSumTwoNoOverlap([0, 6, 5, 2, 2, 5, 1, 9, 4], 1, 2));
