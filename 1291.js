@@ -14,9 +14,9 @@ var sequentialDigits = function(low, high) {
 
   const ret = [];
 
-  const _ = (n, d) => {
+  const _ = (d, len) => {
     let v = 0;
-    for (let i = n; i < d + n; ++i) {
+    for (let i = d; i < d + len; ++i) {
       v = 10 * v + i;
     }
     return v;
