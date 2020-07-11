@@ -3,8 +3,8 @@
  * @return {string}
  */
 var arrangeWords = function(text) {
-  const arr = text.split(" ");
-  return arr
+  return text
+    .split(" ")
     .sort((a, b) => {
       if (a.length == b.length) return a - b;
       else return a.length - b.length;
