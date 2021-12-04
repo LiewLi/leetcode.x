@@ -28,7 +28,7 @@ var isEvenOddTree = function(root) {
 
   while (que.length) {
     level += 1;
-    let len = que.length;
+    const len = que.length;
     const nodes = [];
 
     const addIfValid = (node, level) => {
