@@ -10,11 +10,11 @@ impl Solution {
 
         tasks.sort_by(|a, b| a.0.partial_cmp(&b.0).unwrap());
 
-        let mut maxProfit = 0;
+        let mut max_profit = 0;
 
-        for (d, p) in &mut tasks {
-            maxProfit = std::cmp::max(*p, maxProfit);
-            *p = maxProfit;
+        for (_, p) in &mut tasks {
+            max_profit = std::cmp::max(*p, max_profit);
+            *p = max_profit;
         }
 
         worker
