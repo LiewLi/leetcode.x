@@ -1,4 +1,3 @@
-
 struct Solution;
 
 impl Solution {
@@ -7,10 +6,10 @@ impl Solution {
         let mut s = 0usize;
         let mut e = s;
         while s < prices.len() {
-            if e < prices.len() && (s == e || prices[e] + 1 == prices[e-1]) {
+            if e < prices.len() && (s == e || prices[e] + 1 == prices[e - 1]) {
                 e += 1;
             } else {
-                cnt += ((e-s)*(e-s-1) / 2 + e-s) as i64;
+                cnt += ((e - s) * (e - s - 1) / 2 + e - s) as i64;
                 s = e;
             }
         }
