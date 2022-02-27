@@ -12,6 +12,7 @@ mod lc347;
 mod lc513;
 mod lc523;
 mod lc557;
+mod lc713;
 mod lc747;
 mod lc826;
 mod lc872;
