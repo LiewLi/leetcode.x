@@ -15,10 +15,9 @@ impl Solution {
                 let d = (p[0] - q[0]) * (p[0] - q[0]) + (p[1] - q[1]) * (p[1] - q[1]);
                 let entry = map.entry(d).or_insert(0);
                 *entry += 1;
-            }
-            for k in map.keys() {
-                let c = map.get(k).unwrap_or(&0);
-                cnt += c * (c - 1);
+                if *entry > 1 {
+                    cnt += (*entry << 1) - 2
+                }
             }
         }
 
