@@ -2,6 +2,7 @@ mod lc1207;
 mod lc1317;
 mod lc1680;
 mod lc1695;
+mod lc1726;
 mod lc1790;
 mod lc1837;
 mod lc2057;
