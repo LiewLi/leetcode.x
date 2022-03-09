@@ -18,4 +18,5 @@ mod lc713;
 mod lc747;
 mod lc826;
 mod lc872;
+mod lc89;
 mod lc965;
