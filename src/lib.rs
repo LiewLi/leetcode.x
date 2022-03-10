@@ -8,6 +8,7 @@ mod lc1837;
 mod lc2057;
 mod lc2110;
 mod lc2129;
+mod lc2165;
 mod lc2177;
 mod lc347;
 mod lc447;
