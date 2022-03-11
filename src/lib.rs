@@ -22,5 +22,4 @@ mod lc784;
 mod lc826;
 mod lc872;
 mod lc89;
-mod lc930;
 mod lc965;
