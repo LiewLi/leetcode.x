@@ -1,5 +1,3 @@
-use std::os::unix::prelude::OsStrExt;
-
 struct Solution;
 
 impl Solution {
