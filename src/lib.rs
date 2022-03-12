@@ -16,6 +16,7 @@ mod lc447;
 mod lc472;
 mod lc513;
 mod lc523;
+mod lc540;
 mod lc557;
 mod lc713;
 mod lc747;
