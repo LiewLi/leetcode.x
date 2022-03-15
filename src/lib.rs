@@ -15,6 +15,7 @@ mod lc2130;
 mod lc2165;
 mod lc2177;
 mod lc347;
+mod lc372;
 mod lc447;
 mod lc472;
 mod lc513;
