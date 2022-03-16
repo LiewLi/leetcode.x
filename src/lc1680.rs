@@ -1,6 +1,6 @@
 struct Solution;
 
-use std::collections::HashMap;
+// use std::collections::HashMap;
 
 impl Solution {
     pub fn concatenated_binary(n: i32) -> i32 {

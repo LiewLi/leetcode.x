@@ -1,6 +1,5 @@
 struct Solution;
 
-use std::collections::HashMap;
 use std::collections::VecDeque;
 
 impl Solution {

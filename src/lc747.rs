@@ -1,6 +1,5 @@
 struct Solution;
 
-use std::cmp::max;
 use std::mem::swap;
 
 impl Solution {

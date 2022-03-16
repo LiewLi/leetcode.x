@@ -43,7 +43,7 @@ impl Solution {
             let p = Pair(1 + max_child_level.0, max_child_level.1);
             cache.insert(node, p.clone());
             return p;
-        };
+        }
         let mut max_len_pair = Pair(0, vec![]);
         let mut cache: HashMap<usize, Pair> = HashMap::new();
         for n in 0..nums.len() {
