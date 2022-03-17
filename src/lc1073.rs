@@ -7,12 +7,11 @@ impl Solution {
         let mut c = 0;
         while i < arr1.len() || i < arr2.len() {
             let mut r = 0;
-            if i < arr1.len() && i < arr2.len() {
-                r = arr1[arr1.len() - 1 - i] + arr2[arr2.len() - 1 - i];
-            } else if i < arr1.len() {
-                r = arr1[arr1.len() - 1 - i];
-            } else {
-                r = arr2[arr2.len() - 1 - i];
+            if i < arr1.len() {
+                r += arr1[arr1.len() - 1 - i];
+            }
+            if i < arr2.len() {
+                r += arr2[arr2.len() - 1 - i];
             }
 
             r -= c;
@@ -32,6 +31,8 @@ impl Solution {
 
         if c > 0 {
             ans.push(1);
+            ans.push(1);
+        } else if c < 0 {
             ans.push(1);
         }
 
