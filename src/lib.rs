@@ -1,5 +1,6 @@
 mod lc1073;
 mod lc1207;
+mod lc1221;
 mod lc1315;
 mod lc1317;
 mod lc1363;
