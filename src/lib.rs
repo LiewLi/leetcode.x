@@ -21,6 +21,7 @@ mod lc2134;
 mod lc2150;
 mod lc2165;
 mod lc2177;
+mod lc2181;
 mod lc347;
 mod lc368;
 mod lc372;
