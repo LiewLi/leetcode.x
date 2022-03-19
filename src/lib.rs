@@ -29,6 +29,7 @@ mod lc435;
 mod lc447;
 mod lc472;
 mod lc513;
+mod lc518;
 mod lc523;
 mod lc540;
 mod lc557;
