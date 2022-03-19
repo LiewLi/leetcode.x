@@ -9,6 +9,7 @@ mod lc1423;
 mod lc1680;
 mod lc1695;
 mod lc1726;
+mod lc1749;
 mod lc1790;
 mod lc1837;
 mod lc1888;
