@@ -4,7 +4,7 @@
   "description": "leetcode solutions in js",
   "main": "index.js",
   "scripts": {
-    "lint": "./node_modules/.bin/eslint **.js",
+    "lint": "npx eslint **.js",
     "pretty": "npx prettier --write *.js",
     "stat": "ls -l | grep '[0-9][0-9]*.js$' | wc -l",
     "test": "jest"
