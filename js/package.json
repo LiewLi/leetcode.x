@@ -30,13 +30,20 @@
     "eslint-plugin-prettier": "^3.1.1",
     "husky": "^3.0.5",
     "jest": "^27.5.1",
+    "lint-staged": "^12.3.7",
     "prettier": "1.18.2",
     "pretty-quick": "^1.11.1"
   },
   "husky": {
     "hooks": {
-      "pre-commit": "npm run prettier",
-      "pre-push": "npm test && npm run lint"
+      "pre-commit": "npx lint-staged",
+      "pre-push": "npm test"
     }
+  },
+  "lint-staged": {
+    "./*.js": [
+      "prettier --write",
+      "eslint --fix"
+    ]
   }
 }
