@@ -1,6 +1,2 @@
-js/node_modules
 .vscode/*
 !.vscode/settings.json
-
-rs/target
-rs/Cargo.lock
