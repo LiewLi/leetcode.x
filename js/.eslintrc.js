@@ -7,7 +7,6 @@ module.exports = {
   rules: {
     "prettier/prettier": "error",
     "no-var": "off",
-    "no-unused-vars": "off",
     "require-jsdoc": "off",
     "valid-jsdoc": "off",
     camelcase: "off"

@@ -5,7 +5,6 @@
 var maxLengthBetweenEqualCharacters = function(s) {
   let ans = -1;
   const map = {};
-  const d = 0;
   for (let i = 0; i < s.length; ++i) {
     if (map[s.charAt(i)] === undefined) {
       map[s.charAt(i)] = i;
