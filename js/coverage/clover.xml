@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1647955453316" clover="3.2.0">
+  <project timestamp="1647955453316" name="All files">
+    <metrics statements="9" coveredstatements="9" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1" elements="12" coveredelements="12" complexity="0" loc="9" ncloc="9" packages="1" files="1" classes="1"/>
+    <file name="lc1624.js" path="/Users/admin/Developer/GitHub/leetcode.x/js/lc1624.js">
+      <metrics statements="9" coveredstatements="9" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
+      <line num="5" count="1" type="stmt"/>
+      <line num="6" count="1" type="stmt"/>
+      <line num="7" count="1" type="stmt"/>
+      <line num="8" count="1" type="stmt"/>
+      <line num="9" count="4" type="cond" truecount="2" falsecount="0"/>
+      <line num="10" count="3" type="stmt"/>
+      <line num="12" count="1" type="stmt"/>
+      <line num="15" count="1" type="stmt"/>
+      <line num="18" count="1" type="stmt"/>
+    </file>
+  </project>
+</coverage>
