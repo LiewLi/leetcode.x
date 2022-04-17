@@ -17,9 +17,9 @@ var minimumSwap = function(s1, s2) {
 
   if (x % 2 != y % 2) return -1;
   if (x % 2 == 0) {
-    return x / 2 + y / 2;
+    return (x >> 1) + (y >> 1);
   } else {
-    return Math.floor(x / 2) + Math.floor(y / 2) + 2;
+    return (x >> 1) + (y >> 1) + 2;
   }
 };
 
