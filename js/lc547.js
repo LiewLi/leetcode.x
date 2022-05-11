@@ -13,7 +13,7 @@ var findCircleNum = function(isConnected) {
   };
 
   const union = (n, m) => {
-    disjointSet[find(m)] = n;
+    disjointSet[find(m)] = find(n);
   };
 
   for (let i = 0; i < isConnected.length; ++i) {
