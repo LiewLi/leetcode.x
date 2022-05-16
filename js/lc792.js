@@ -10,7 +10,6 @@ var numMatchingSubseq = function(s, words) {
   }
   for (let i = 0; i < s.length; ++i) {
     const idx = s.charCodeAt(i) - "a".charCodeAt(0);
-    map[idx] = map[idx] || [];
     map[idx].push(i);
   }
   let ans = 0;
