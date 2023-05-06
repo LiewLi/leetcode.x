@@ -1,0 +1,36 @@
+name: CXX
+
+on:
+  push:
+    branches: [ main ]
+    paths:
+      - 'cxx/**'
+  pull_request:
+    branches: [ main ]
+    paths:
+      - 'cxx/**'
+
+defaults:
+  run:
+    working-directory: cxx
+
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Cache bazel
+      uses: actions/cache@v2.1.4
+      env:
+        cache-name: bazel-cache
+      with:
+        path: |
+          ~/.cache/bazelisk
+          ~/.cache/bazel
+        key: ${{ runner.os }}-${{ env.cache-name }}
+
+    - uses: actions/checkout@v3
+    - name: Run tests
+      run: bazel test --test_output=all //lc:test
