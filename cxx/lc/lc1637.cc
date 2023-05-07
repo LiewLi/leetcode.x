@@ -20,6 +20,6 @@ public:
 TEST(lc1637, case0) {
   Solution sol;
   std::vector<std::vector<int>> vec{{8, 7}, {9, 9}, {7, 4}, {9, 7}};
-  EXPECT_EQ(sol.maxWidthOfVerticalArea(vec), 1);
+  ASSERT_EQ(sol.maxWidthOfVerticalArea(vec), 1);
 }
 } // namespace lc1637

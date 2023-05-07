@@ -44,7 +44,7 @@ TEST(lc1636, case0)
     Solution sol;
     std::vector<int> vec{1,1,2,2,2,3};
     std::vector<int> expected{3,1,1,2,2,2};
-    EXPECT_EQ(sol.frequencySort(vec), expected);
+    ASSERT_EQ(sol.frequencySort(vec), expected);
 }
 
 }
