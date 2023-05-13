@@ -1,11 +1,11 @@
 #include <gtest/gtest.h>
-#include <vector>
 #include <unordered_map>
+#include <vector>
 
 namespace lc1636 {
 
 class Solution {
-public:
+   public:
     std::vector<int> frequencySort(std::vector<int>& nums) {
         std::unordered_map<int, size_t> freq_map{};
         using _pair = std::pair<int, size_t>;
@@ -19,7 +19,7 @@ public:
                 pairs[freq_map[n]].second += 1;
             }
         }
-        
+
         std::sort(pairs.begin(), pairs.end(), [](_pair& p, _pair& q) {
             if (p.second == q.second) {
                 return q.first <= p.first;
@@ -39,12 +39,11 @@ public:
     }
 };
 
-TEST(lc1636, case0)
-{
+TEST(lc1636, case0) {
     Solution sol;
-    std::vector<int> vec{1,1,2,2,2,3};
-    std::vector<int> expected{3,1,1,2,2,2};
+    std::vector<int> vec{1, 1, 2, 2, 2, 3};
+    std::vector<int> expected{3, 1, 1, 2, 2, 2};
     ASSERT_EQ(sol.frequencySort(vec), expected);
 }
 
-}
+}  // namespace lc1636
