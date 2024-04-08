@@ -9,6 +9,7 @@ module.exports = {
     "no-var": "off",
     "require-jsdoc": "off",
     "valid-jsdoc": "off",
+    "no-extend-native": "off",
     unused_variable: "off",
     camelcase: "off"
   }
